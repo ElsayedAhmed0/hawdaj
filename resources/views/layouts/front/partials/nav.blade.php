@@ -23,7 +23,7 @@
                 <a class="nav-link" href="#">الكرفانات</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">سوالف</a>
+                <a class="nav-link" href="{{ url(app()->getLocale() . '/swalefs') }}">سوالف</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">المزادات</a>

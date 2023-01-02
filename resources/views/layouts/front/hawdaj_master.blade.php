@@ -149,6 +149,7 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{ asset('front_assets/css/main.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front_assets/css/main-style.css') }}">
     <script>
         // initMap declaration
         // to hide 'initMap is not a function' error
