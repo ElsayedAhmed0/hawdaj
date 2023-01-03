@@ -3,6 +3,7 @@
 
 <section class="filter-grid-section filter-grid-section--height">
     <div class="container">
+    <h2 class="page-title mb-4">Obcaecati modi et nu</h2>
         <div class="section-boxes container">
 
             <!-- anim-project a1 -->
