@@ -1,3 +1,150 @@
-.test{
-    font-size: 30px;
+.filter-grid-section--height{
+    height: auto;
+    margin-bottom: 50px;
+}
+.section-box-container {
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.swiper-zoom-container {width: 100%;height: 350px;}
+.section-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.section-boxes-wrap{
+    padding: 10px 0;
+    width: 23%;
+    height: auto;
+}
+.section-title{
+    position: relative;
+    transition: .3s ease;
+    padding: 8px;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    background: #ffffff4a;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .3s ease all;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px #9d9d9d;
+}
+
+
+
+.section-title:hover::before{
+    top: 0%;
+    left: 0%;
+    transform: scale(1.03);
+}
+
+.title-area{
+    position: relative;
+}
+
+.section-projects-overflow{
+    transition: .3s ease;
+}
+
+.swiper3{
+    transition: .5s ease all;
+}
+
+
+.project-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #6c6f8a;
+    white-space: nowrap;
+    transition: .3s ease all;
+}
+
+.project-title {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #000000;
+    transition: .3s ease;
+}
+.section-box {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+}
+.swiper-zoom-container img {
+    width: 100%;
+    height: 100%;
+}
+.active .swiper3{
+    height: 550px ;
+}
+.swiper3{
+    height: 300px;
+    border-radius: 5px;
+}
+.swiper3 img{
+    border-radius: 5px;
+}
+
+
+i{
+  margin-right:5px;
+}
+.project-date{
+  font-size:16px;
+    color: #6c6f8a;
+}
+span.type-project {
+    font-size: 14px;
+    padding: 20px 0;
+    display: block;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1147px) {
+  .section-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+.section-boxes-wrap{
+    padding: 10px 0;
+    width: 40%;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 785px) {
+  .section-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+.section-boxes-wrap{
+    padding: 10px 0;
+    width: 400px;
+    height: auto;
+}
 }
