@@ -1451,4 +1451,10 @@ class HomeController extends Controller
         $places =[];
         return view('front.swalef.all' , compact('places'));
     }
+
+    public function one_page_swalefs()
+    {
+        $places =[];
+        return view('front.swalef.one' , compact('places'));
+    }
 }

@@ -7,6 +7,7 @@
 
             <!-- anim-project a1 -->
             <div class="section-boxes-wrap">
+                <a href="{{ url(app()->getLocale() . '/swalefsonepage') }}">
                 <div class="section-title">
                     <div class="section-projects-overflow">
                         <div class="section-box ">
@@ -27,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-
+                </a>
             </div>
             <!-- anim-project a1 -->
             <div class="section-boxes-wrap">
