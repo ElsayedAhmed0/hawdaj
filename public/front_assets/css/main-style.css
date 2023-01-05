@@ -7,163 +7,88 @@
     text-align: left;
     width: 100%;
 }
-.swiper-zoom-container {width: 100%;height: 400px;}
-.section-boxes {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-}
-.section-boxes-wrap{
-    padding: 10px 0;
-    width: 23%;
-    height: auto;
-}
-.section-title{
-    position: relative;
-    transition: .3s ease;
-    padding: 8px;
-}
-.section-title::before{
-    content: "";
-    position: absolute;
-    top: 8%;
-    left: 0%;
-    background: #ffffff4a;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: .3s ease all;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px #9D9D9D;
-}
-.section-title:hover::before{
-    top: 0%;
-    left: 0%;
-    transform: scale(1.03);
-}
-.title-area{
-    position: absolute;
-    bottom: -300px;
-    transition: .3s ease-in-out;
-    padding: 10px;
-    width: 100%;
-    background: #fff;
-    border-radius: 10px 10px 0 0;
-}
-.section-projects-overflow{
-    transition: .3s ease;
-    position: relative;
-    overflow: hidden;
-    height: 400px;
-}
-.swiper3{
-    transition: .5s ease all;
-}
-.project-type {
+/* .swiper-zoom-container {width: 100%;height: 400px;} */
+
+.card-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-    font-size: 18px;
-    color: #050505;
-    white-space: nowrap;
-    transition: .4s ease-in-out;
-    z-index: 9;
-    position: relative;
-    bottom: -160px;
-    opacity: 0;
-    visibility: hidden;
+    justify-content: start;
 }
-.project-title {
-    white-space: nowrap;
-    font-size: 16px;
-    color: #000000;
-    transition: .5s ease-in-out;
-    position: relative;
-    bottom: -200px;
-    opacity: 0;
-    visibility: hidden;
-}
-.section-box {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 5px;
+
+.card-seation {
+    width: 22%;
     height: 400px;
+    background: #fff;
+    box-shadow: 0px 8px 16px #8c8c8c;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
 }
+
+.swiper-zoom-container {
+    width: 100%;
+    height: 260px;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    position: relative;
+    transition: .3s ease-in-out;
+    /* overflow: hidden; */
+}
+
+.card-seation a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .swiper-zoom-container img {
     width: 100%;
     height: 100%;
-}
-.active .swiper3{
-    height: 550px ;
-}
-.swiper3{
-    height: 400px;
-    border-radius: 5px;
-}
-.swiper3 img{
-    border-radius: 5px;
-}
-i{
-  margin-right:5px;
-}
-.project-date{
-  font-size:16px;
-    color: #6C6F8A;
-}
-span.type-project {
-    font-size: 14px;
-    padding: 20px 0;
-    display: block;
-    font-weight: bold;
-    /* color: #fff; */
-    position: relative;
-    bottom: -200px;
-    transition: .6s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-}
-.section-projects-overflow:hover .title-area {
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: unset;
     transition: .3s ease-in-out;
-    bottom: 0;
-    z-index: 9;
 }
-.section-projects-overflow:before {
-    /* content: ''; */
+span.date-card {
+    top: 0px;
+    left: 0px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000063;
-    transition: .3s ease-in-out;
-    transform: scale(0);
-}
-.section-projects-overflow:hover::before {
-    transition: .3s ease-in-out;
-    transform: scale(1);
-}
-.section-projects-overflow:hover .title-area .project-type {
-    transition: .4s ease-in-out;
-    bottom: 0;
-    opacity: 1;
-    visibility: visible;
-}
-.section-projects-overflow:hover .title-area .project-title {
-    transition: .5s ease-in-out;
-    bottom: 0;
-    opacity: 1;
-    visibility: visible;
-}
-.section-projects-overflow:hover .title-area span.type-project {
-    bottom: 0;
-    transition: .6s ease-in-out;
-    opacity: 1;
-    visibility: visible;
+    background: white;
+    padding: 3px 6px;
+    border-radius: 0 0 3px 0;
+    color: #40a7d0;
+    font-weight: bold;
 }
 
+.card-seation:hover .swiper-zoom-container img {
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+span.wishlist {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+span.wishlist i {
+    color: #fff;
+}
+/* -***************************************** */
+/* -***************************************** */
+/* -***************************************** */
+/* -***************************************** */
+/* -***************************************** */
 .section-details {
     position: relative;
     width: calc(100% - 320px);
@@ -201,6 +126,91 @@ em {
     box-shadow: 0 0 25px #cfcbcb;
     border-radius: 10px;
 }
+
+
+.title-area {
+    position: relative;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.project-type, .project-title, .type-project,.rate-project {
+    padding: 5px 0;
+    display: block;
+}
+
+.project-type span {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.project-title span {
+    font-size: 16px;
+    color: #000;
+}
+
+em.rating- i {
+    color: #ffca00;
+    cursor: pointer;
+    font-size: 14px;
+}
+.see-more-n {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 9;
+}
+
+span.see-m-nd {
+    border: 2px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #000000e6;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    transform: scale(0);
+    display: block;
+}
+
+.card-seation:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: .3s ease-in-out;
+    z-index: 3;
+    background: #6a6a6a96;
+    right: 0;
+}
+
+.card-seation:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: .3s ease-in-out;
+    z-index: 3;
+    background: #6a6a6a96;
+    left: 0;
+}
+
+.card-seation:hover:before,.card-seation:hover:after {
+    transition: .3s ease-in-out;
+    width: 50%;
+}
+
+.card-seation:hover span.see-m-nd {
+    transform: scale(1);
+    z-index: 9;
+}
+
 /******************************************************/
 /******************************************************/
 /******************************************************/
