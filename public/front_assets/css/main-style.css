@@ -73,6 +73,8 @@
     z-index: 9;
     position: relative;
     bottom: -160px;
+    opacity: 0;
+    visibility: hidden;
 }
 .project-title {
     white-space: nowrap;
@@ -81,6 +83,8 @@
     transition: .5s ease-in-out;
     position: relative;
     bottom: -200px;
+    opacity: 0;
+    visibility: hidden;
 }
 .section-box {
     overflow: hidden;
@@ -118,6 +122,8 @@ span.type-project {
     position: relative;
     bottom: -200px;
     transition: .6s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 .section-projects-overflow:hover .title-area {
     transition: .3s ease-in-out;
@@ -142,14 +148,20 @@ span.type-project {
 .section-projects-overflow:hover .title-area .project-type {
     transition: .4s ease-in-out;
     bottom: 0;
+    opacity: 1;
+    visibility: visible;
 }
 .section-projects-overflow:hover .title-area .project-title {
     transition: .5s ease-in-out;
     bottom: 0;
+    opacity: 1;
+    visibility: visible;
 }
 .section-projects-overflow:hover .title-area span.type-project {
     bottom: 0;
     transition: .6s ease-in-out;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section-details {
