@@ -13,16 +13,18 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 .card-seation {
-    width: 22%;
+    width: 23%;
     height: 400px;
     background: #fff;
     box-shadow: 0px 8px 16px #8c8c8c;
     padding: 5px;
     overflow: hidden;
     position: relative;
+    margin: 10px;
 }
 
 .swiper-zoom-container {
@@ -152,6 +154,10 @@ a:hover {
 .project-title span {
     font-size: 16px;
     color: #000;
+    height: 38px;
+    display: block;
+    overflow: hidden;
+    line-height: 20px;
 }
 
 em.rating- i {
@@ -267,5 +273,8 @@ ul.place-details__reviews.py-2.rates {
 
 li#empty {
     margin: 0 !important;
+}
+.card-row {
+    flex-wrap: wrap;
 }
 }
