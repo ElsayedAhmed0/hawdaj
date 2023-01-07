@@ -250,6 +250,106 @@ span.see-m-nd {
         width: 40%;
         height: auto;
     }
+    .section-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+
+    }
+
+    .section-boxes-wrap {
+        padding: 10px 0;
+        width: 400px;
+        height: auto;
+    }
+
+    .inner-page {
+        flex-wrap: wrap;
+    }
+
+    .inner-page .card-img {
+        position: relative;
+    }
+
+    .section-details {
+        width: 100%;
+    }
+
+    .section-details {
+        margin-top: 50px;
+    }
+
+    ul.place-details__reviews.py-2.rates {
+        width: 100%;
+    }
+
+    li#empty {
+        margin: 0 !important;
+    }
+
+    .card-row {
+        flex-wrap: wrap;
+    }
+
+    li.nav-item {
+        border-bottom: 1px solid #c3c3c361;
+    }
+
+    .navbar-collapse .nav-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    ul.socials-sm.d-flex.align-items-center.d-lg-none {
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+    }
+
+    ul.socials-sm.d-flex.align-items-center.d-lg-none li {
+        display: block;
+        width: 100%;
+        padding: 0.8rem 0 !important;
+        text-align: center;
+    }
+    .additional_bar_login_and_welcome button.home_login_button,ul.socials-sm.d-flex.align-items-center.d-lg-none li.pl-2 button {
+        width: 100%;
+        padding: 10px 40px !important;
+        font-size: 18px;
+        border-radius: 6px;
+        margin: 5px 0;
+    }
+
+
+    .ml-2.home_login_buttons_area {
+        margin: 0 !important;
+    }
+
+    .socaial-box {
+        border: solid 2px #2c085d;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .main_tab.col-12 {
+        flex-wrap: wrap !important;
+    }
+
+    .main_tab.col-12 .left-side,.main_tab.col-12 .right-side {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .popup_that_shows_on_startup #make_a_trip_popup {
+        margin-top: 0px !important;
+    }
+
+    .main_tab.col-12 .right-side img {
+        width: 100% !important;
+        height: 350px !important;
+    }
+    .card-seation {width: 100%;}
+
 }
 
 @media only screen and (max-width: 785px) {
@@ -351,4 +451,5 @@ span.see-m-nd {
         width: 100% !important;
         height: 350px !important;
     }
+    .card-seation {width: 100%;}
 }
